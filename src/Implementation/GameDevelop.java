@@ -1,3 +1,5 @@
+package Implementation;
+
 import java.util.Scanner;
 
 public class GameDevelop {
@@ -12,10 +14,12 @@ public class GameDevelop {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("크기 입력 : ");
         // 1 크기 입력
         N = scanner.nextInt();
         M = scanner.nextInt();
 
+        System.out.println("현재 위치 및 방향 입력 : ");
         // 2 현재 위치 및 방향 입력
         x = scanner.nextInt();
         y = scanner.nextInt();
@@ -24,6 +28,7 @@ public class GameDevelop {
         map = new int[N][M];
         visited = new boolean[N][M];
 
+        System.out.println("지도 입력 : ");
         // 3 지도 입력
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
