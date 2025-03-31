@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class LuckyStraight {
-    static int n;
+
     static String N;
     static List<Integer> list = new ArrayList<>();
+    // 추가 풀이용
+    static int n;
     static List<Integer> list2 = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class LuckyStraight {
         System.out.println("숫자 입력 : ");
         N = scanner.nextLine();
 
+        // Sting input > char(아스키)
         for (char c : N.toCharArray()) {
             list.add(c - '0');
         }
