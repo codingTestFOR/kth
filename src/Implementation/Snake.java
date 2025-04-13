@@ -1,7 +1,4 @@
 package Implementation;
-
-import lombok.ToString;
-
 import java.util.*;
 
 public class Snake {
