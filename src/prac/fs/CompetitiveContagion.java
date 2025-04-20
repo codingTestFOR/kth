@@ -64,15 +64,16 @@
                     System.out.println();
                 }
 
-                int[][] bfs = bfs(s);
-                int result = bfs[x-1][y-1];
+                int[][] virusArr = virus(s);
+                int result = virusArr[x-1][y-1];
                 System.out.println(Math.max(result, 0));
 
             }
 
-            public static int[][] bfs(int s){
+            public static int[][] virus(int s){
                 int count = 0;
                 while (count != s) {
+                    // 낮은 바이러스부터 전염
                     for (int m = 1; m < k + 1; m++) {
 
                         int x = -1;
@@ -91,14 +92,13 @@
                         for (int i = 0; i < 4; i++) {
                             nx = x + dx[i];
                             ny = y + dy[i];
-                        }
 
-                        if (x >= 0 && x < n && y >= 0 && y < n) {
-                            if (nx >= 0 && nx < n && ny >= 0 && ny < n) {
-                                if (map[nx][ny] == 0) {
-                                    map[nx][ny] = k;
+                            if (x >= 0 && x < n && y >= 0 && y < n) {
+                                if (nx >= 0 && nx < n && ny >= 0 && ny < n) {
+                                    if (map[nx][ny] == 0) {
+                                        map[nx][ny] = m;
+                                    }
                                 }
-
                             }
                         }
                     }
