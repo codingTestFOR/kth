@@ -1,4 +1,4 @@
-package prac.fs;
+package 연습.fs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
