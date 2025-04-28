@@ -37,6 +37,13 @@ public class 학생출력 {
             System.out.println(key);
         }
 
+        /*
+        stream에서 .sorted(Map.Entry.comparingByValue()의 정렬 알고리즘은
+        TimSort 를 사용 (시간복잡도 nlogn)
+
+        TimSort = 병합 + 삽입 정렬
+
+         */
 
     }
 }

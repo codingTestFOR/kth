@@ -22,5 +22,12 @@ public class 위에서아래로 {
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
+
+        /*
+        Arrays.sort의 정렬 알고리즘은
+        Dual-Pivot QuickSort를 사용 (시간복잡도 nlogn, 최악 n^2)
+
+        Dual-Pivot QuickSort는 피벗을 두 개 사용하는 퀵소트
+         */
     }
 }
