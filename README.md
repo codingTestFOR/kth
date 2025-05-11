@@ -1,4 +1,4 @@
-@ dp - 바닥공사.py
+# dp - 바닥공사.py
 
 def bottom_up(n):
     table = [0] * (n + 1)
@@ -12,7 +12,7 @@ def bottom_up(n):
     return table[n] % 796796
 
 
-# 메모이제이션용 배열
+### 메모이제이션용 배열
 memo = [0] * 1001
 
 def top_down(n):
@@ -27,7 +27,7 @@ def top_down(n):
     return memo[n]
 
 
-# 입력 받기
+### 입력 받기
 n = int(input("n 입력 : "))
 print("bottomUp :", bottom_up(n))
 print("topDown :", top_down(n) % 796796)
