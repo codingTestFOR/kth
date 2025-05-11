@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-!**/src/특강/
+
 
 ### Eclipse ###
 .apt_generated
@@ -29,3 +29,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+**/src/특강/
