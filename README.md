@@ -2,6 +2,7 @@
 
 ```python
 def bottom_up(n):
+    # dp 테이블
     table = [0] * (n + 1)
     table[1] = 1
     if n >= 2:
