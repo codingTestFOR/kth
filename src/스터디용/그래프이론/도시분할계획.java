@@ -47,8 +47,9 @@ public class 도시분할계획 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();  // 노드 수
-        int m = sc.nextInt();  // 간선 수
+        System.out.println("n m 입력 : ");
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
         parent = new int[n + 1];
         for (int i = 1; i <= n; i++) {
@@ -58,7 +59,7 @@ public class 도시분할계획 {
         List<Edge> edges = new ArrayList<>();
         List<Integer> result = new ArrayList<>();
 
-        // 간선 정보 입력
+        System.out.println("간선 입력 : ");
         for (int i = 0; i < m; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
