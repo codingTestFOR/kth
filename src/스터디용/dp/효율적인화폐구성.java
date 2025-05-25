@@ -19,14 +19,14 @@ public class 효율적인화폐구성 {
         }
 
 
-        // 스터디용.dp table 생성 > 바텀업 방식
+        // dp table 생성 > 바텀업 방식
         int[] table = new int[m + 1];
-        // 스터디용.dp table 모든 요소 20000으로 초기화
+        // dp table 모든 요소 20000으로 초기화
         Arrays.fill(table, 20000);
 
         // 0번째 요소 0 할당
         table[0] = 0;
-        // 화폐 종류별로 스터디용.dp table 갱신
+        // 화폐 종류별로 dp table 갱신
         for (int i = 0; i < n; i++) {
             // 화폐 순서대로 화폐 크기 ~ 전체 값 m 까지 루프
             for (int j = type[i]; j < m + 1; j++) {
