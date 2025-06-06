@@ -1,36 +1,7 @@
-# dp - 바닥공사.py
+# 자바 코딩테스트 준비 레포
 
-```python
-def bottom_up(n):
-    # dp 테이블
-    table = [0] * (n + 1)
-    table[1] = 1
-    if n >= 2:
-        table[2] = 3
-
-    for i in range(3, n + 1):
-        table[i] = table[i - 1] + 2 * table[i - 2]
-
-    return table[n] % 796796
-
-
-# 메모이제이션용 배열
-memo = [0] * 1001
-
-def top_down(n):
-    if n == 1:
-        return 1
-    if n == 2:
-        return 3
-    if memo[n] != 0:
-        return memo[n]
-
-    memo[n] = top_down(n - 1) + 2 * top_down(n - 2)
-    return memo[n]
-
-
-# 입력 받기
-n = int(input("n 입력 : "))
-print("bottomUp :", bottom_up(n))
-print("topDown :", top_down(n) % 796796)
-```
+# 학습 주제
+- 시간/공간 복잡도에 있어서 알고리즘 수정을 통한 O()표기시 지수시간 > 다항시간 > 로그시간으로의 단축
+- DFS/BFS와 다익스트라/플로이드 워셜 알고리즘 등을 활용한 최단거리 및 완전탐색
+- DP(다이나믹 프로그래밍)의 탑다운, 바텀업 기법 구현을 위한 메모이제이션 및 dp테이블 도입
+- 삽입 정렬, 병합 정렬, 퀵 정렬, 팀 정렬 등 주로 사용되는 정렬 알고리즘
