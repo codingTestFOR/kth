@@ -5,9 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.StringTokenizer;
 
-public class no_1316 {
+public class No_1316 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
